@@ -1,0 +1,39 @@
+Como criar um diretório no gitHub :
+
+
+new directory,tem que escolher qual liçenca vc quer(e bom dar uma pesquisada sobre isso de licencas saca)
+
+uma liçenca recomendada é o GLT3.
+
+-----------------------------------------------------------------------------------
+
+
+é importante abrir o cmd do linux(git bash)na pasta que vc deseja trabalhar cm ele para poupar trabalho
+
+
+COMANDOS GIT{
+~/ :pasta do usuario
+
+cd :nome do arquivo no gitHub
+
+ls :grupo dentro da pasta
+
+ls -lh : ver permissões
+
+git clone : link
+
+git config --global user.email "rafaelalmeida383@hotmail.com"
+
+git config --global user.name "RafaelVi"
+                     ------
+--------------------|UPLOAD|-------------------------------------
+                     ------
+git add . para alterar seu arquivo
+
+git commit -m "" para fazer um comentario sobre sua mudanca
+
+git push para subir o arquivo
+
+
+
+------------------------------------------------------------------------------------

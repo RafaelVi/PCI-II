@@ -1,8 +1,7 @@
 package lista3exercicioa;
-import javax.swing.JOptionPane;
-import static javax.swing.JOptionPane.*;
+import static lista3exercicioa.LerExibir.*;
 public class Lista3ExercicioA {
-static final String NOME_APP = "CONVERTER 5000"; //final não pode ser alterada, é uma constante.
+
     public static void main(String[] args) {
     int opcao = lerInt(
                         "Qual opção você deseja de conversão?\n"+
@@ -23,35 +22,12 @@ static final String NOME_APP = "CONVERTER 5000"; //final não pode ser alterada,
              
      }
      
-    exibir((graus == Double.MAX_VALUE ?"[ERRO]" : "" + graus));
+    exibir((graus == Double.MAX_VALUE ?"[ERRO]" : "Da " + graus +" graus"));
     
     
         
     }//main
     
-    public static String ler(Object mensagem){//metodo para exibir a mensagem e pegar um valor
-        return  showInputDialog(
-                null,//janela pai 
-                mensagem,//MENSAGEM
-                NOME_APP,//titulo
-                JOptionPane.PLAIN_MESSAGE);
-    }//ler
-    
-    public static double lerDouble(Object mensagem){
-    return Double.parseDouble(ler(mensagem));
-    }//lerdouble
    
-    public static int lerInt(Object mensagem){
-    return Integer.parseInt(ler(mensagem));
-    }//lerInt    
-    
-    public static void exibir(Object mensagem){
-   
-        showMessageDialog(
-                null,//janela pai 
-                mensagem,//MENSAGEM
-                NOME_APP,//titulo
-                JOptionPane.PLAIN_MESSAGE);
-    }
     
 }//class
