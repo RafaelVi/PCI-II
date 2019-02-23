@@ -1,8 +1,8 @@
 
 package exercicio4c;
 
-import static lerexibir.Janela.*;
-//import static lerexibir.Console.*;
+//import static lerexibir.Janela.*;
+import static lerexibir.Console.*;
 public class Exercicio4C {
 
    static final double NOTA_MINIMA = 5.0;
