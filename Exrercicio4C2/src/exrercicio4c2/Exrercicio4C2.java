@@ -33,11 +33,11 @@ public class Exrercicio4C2 {
         if (valorMencao >= Mencao.MB.valorMencao) {
             return Mencao.MB;
         }
-        if (valorMencao < Mencao.MB.valorMencao && valorMencao >= Mencao.B.valorMencao) {
+        else if (valorMencao < Mencao.MB.valorMencao && valorMencao >= Mencao.B.valorMencao) {
             
             return Mencao.B;
         }
-        if (valorMencao < Mencao.B.valorMencao && valorMencao >= Mencao.R.valorMencao) {
+        else if (valorMencao < Mencao.B.valorMencao && valorMencao >= Mencao.R.valorMencao) {
             
             return Mencao.R;
         }
