@@ -1,7 +1,7 @@
 package nivel05;
 import java.util.*;
 
-public class Contatos {
+public class ListadeContatos {
     //Atributos de Classe/Instância
     private ArrayList<Contato> contatos = new ArrayList<>();
     

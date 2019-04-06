@@ -44,13 +44,19 @@ public class Executavel {
 //        
 //        exibir(agenda);
 
-            Contatos contatos = new Contatos();
-            Abertura abertura = new Abertura();
-            abertura.setVisible(true);
-            CriarContato criarContato = new CriarContato();
+            ListadeContatos contatos = new ListadeContatos();
+            Abertura tela01 = new Abertura();
+            tela01.setVisible(true);
+            CriarContato tela02 = new CriarContato();
+            Pesquisar tela03 = new Pesquisar();
             
-            abertura.proximaJanela= criarContato;
-            criarContato.janelaAnteiror = abertura;
+            tela01.janelaCriarContato= tela02;
+            tela02.janelaAnterior = tela01;
+            
+            tela01.janelaPesquisar=tela03;
+            tela03.janelaAnterior=tela01;
+            
+            
     }//método main
     
 }//class

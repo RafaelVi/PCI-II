@@ -6,7 +6,9 @@
 package nivel05.telas;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import nivel05.Contato;
+import nivel05.VarGlobal;
 
 /**
  *
@@ -17,7 +19,7 @@ public class CriarContato extends javax.swing.JFrame {
     /**
      * Creates new form CriarContato
      */
-    public JFrame janelaAnteiror;
+    public JFrame janelaAnterior;
     public CriarContato() {
         initComponents();
     }
@@ -142,14 +144,25 @@ public class CriarContato extends javax.swing.JFrame {
 
     private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
         this.setVisible(false);
-        janelaAnteiror.setVisible(true);
+        janelaAnterior.setVisible(true);
     }//GEN-LAST:event_btVoltarActionPerformed
 
     private void btSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarActionPerformed
+        //1° pegou dados digitados
         Contato novo = new Contato();
         novo.nome=inputNome.getText();
         novo.endereco=inputEndereco.getText();
         novo.telefone=inputTelefone.getText();
+        //2° salvou dados  
+        VarGlobal.listaContato.adicionar(novo);
+        //3° limpar os dados do formulario
+        inputNome.setText("");
+        inputEndereco.setText("");
+        inputTelefone.setText("");
+        //4° exibir a mensagem de salvo com sucesso 
+        JOptionPane.showMessageDialog(this, "Dados salvos com sucesso", "Salvando dados...",JOptionPane.PLAIN_MESSAGE);
+        //5°Adicionar na lista de contatos
+        VarGlobal.listaContato.adicionar(novo);
         
     }//GEN-LAST:event_btSalvarActionPerformed
 
